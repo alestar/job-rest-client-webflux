@@ -52,7 +52,7 @@ public class RestClient {
     public Flux<Job> retrieveJobs(List<String> ids) {
         logger.info("Calling retrieveJobs");
         logger.info(String.format(" from URI (%s)", uri));
-1
+
         return Flux.fromIterable(ids)
                 .parallel()
                 .runOn(Schedulers.elastic())
