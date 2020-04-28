@@ -14,17 +14,17 @@ public class JobWrapper {
 
     @JsonCreator
     public JobWrapper(@JsonProperty("jobs") List<Job> jobs) {
-        this.jobs = jobs;
-    }
+            this.jobs = jobs;
+        }
 
-    public List<Job> getJobs() {
-        return jobs;
-    }
+        public List<Job> getJobs() {
+            return jobs;
+        }
 
-    @Override
-    public String toString() {
-        return "jobs{"
-                + jobs +
+        @Override
+        public String toString() {
+            return "jobs{"
+                    + jobs +
                 '}';
     }
 }

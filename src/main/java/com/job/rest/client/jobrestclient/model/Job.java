@@ -1,6 +1,5 @@
 package com.job.rest.client.jobrestclient.model;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sun.xml.internal.ws.developer.Serialization;
 
@@ -20,6 +19,6 @@ public class Job {
 
     @Override
     public String toString() {
-        return id ;
+        return id.toString() ;
     }
 }
