@@ -50,6 +50,10 @@
     - WireMock - A web service test Web Clients
     - JVM/JDK 8: The Java Development Kit used for creating this application.	
  
+  # Use
+    To point to the right endpoint please use ${uri.endpoint} under application.properties
+
+ 
  # Test
     For testing purposes a Web Service app has been developed so the Rest Client can query the service. 
     This tool can be found on: https://github.com/alestar/job-endpoint-service . 
