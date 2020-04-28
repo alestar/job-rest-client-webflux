@@ -27,11 +27,10 @@ public class JobRestClientApplication implements CommandLineRunner {
 
         //Create a list of Job ID to make simultaneous rest calls
         List<String> jobIDs = Arrays.asList("1","3","4","5","6","7","9","10");
-        restClient.retrieveJobsFromURI(jobIDs);
+        restClient.createWebClient();// Initiate web client
+        restClient.retrieveJobs(jobIDs);// Retrieve Jobs from endpoint
 
-        System.out.println("My uri: " + restClient.getUri());
-
-        JobWrapper jobWrapper = new JobWrapper(restClient.retrieveJobsFromURI(jobIDs)
+        JobWrapper jobWrapper = new JobWrapper(restClient.retrieveJobs(jobIDs)
                 .collectList()
                 .block());
 
