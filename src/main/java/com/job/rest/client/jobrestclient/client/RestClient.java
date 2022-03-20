@@ -49,6 +49,7 @@ public class RestClient {
                 .retrieve()
                 .bodyToMono(Job.class);
     }
+
     public Flux<Job> retrieveJobs(List<String> ids) {
         logger.info("Calling retrieveJobs");
         logger.info(String.format(" from URI (%s)", uri));
