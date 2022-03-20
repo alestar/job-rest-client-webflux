@@ -2,10 +2,6 @@ package com.job.rest.client.jobrestclient.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.apache.tomcat.util.codec.binary.StringUtils;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class JobWrapper {
